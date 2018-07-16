@@ -29,7 +29,6 @@ prime_lst = primes(10000)   # Primes up to 10000
 def largest_prime(n):
     for i in sorted(prime_lst, reverse=True):
         if n % i == 0:
-            print(i)
             return i
 
 largest_prime(600851475143)
